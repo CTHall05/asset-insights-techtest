@@ -3,7 +3,7 @@ var Userdb = require('../model/model');
 // create and save new user
 exports.create = (req, res) => {
   // validate request
-  if (!req.body.name || !req.body.email || !req.body.gender || !req.body.status) {
+  if (!req.body.name || !req.body.email || !req.body.gender) {
     res.status(400).send({message: "Content can not be empty!"});
     return;
   }
@@ -21,6 +21,7 @@ exports.create = (req, res) => {
     .save(user)
     .then(data => {
       res.send(data)
+      response.redirect("/add-user")
     })
     .catch(err => {
       res.status(500).send({

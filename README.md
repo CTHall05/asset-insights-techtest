@@ -6,9 +6,17 @@ I wanted to try and use MongoDB as this is a database technology I want to learn
 
 I have sent you the email with the config.env details and I will write the instructions on how to view the CRUD application below:
 
+// Open the terminal first
+-- type and run into the terminal: npm i
+-- do this before any other step
+
 // How to run the app
 
--- Open a terminal in the code editor of your choice and make sure you are in the crudApp directory -- In the terminal type the command: npm start -- Next type: localhost:3000, into your browser search bar
+-- Open a terminal in the code editor of your choice and make sure you are in the crudApp directory 
+-- In the terminal type the command: npm start 
+-- Next type: localhost:3000, into your browser search bar
+
+
 
 Following these steps you should now see the application in your internet browser.
 
